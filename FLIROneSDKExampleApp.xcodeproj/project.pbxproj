@@ -45,6 +45,11 @@
 		FC261C5C1A3DD58C008FAA66 /* RMDownloadIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FC261C581A3DD58C008FAA66 /* RMDownloadIndicator.m */; };
 		FC261C5D1A3DD58C008FAA66 /* RMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC261C5A1A3DD58C008FAA66 /* RMViewController.m */; };
 		FC261C5F1A3DD7A7008FAA66 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC261C5E1A3DD7A7008FAA66 /* Launch Screen.xib */; };
+		FC5170FC1A3E0B3100B64F3A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC5170F71A3E0B3100B64F3A /* 1.jpg */; };
+		FC5170FD1A3E0B3100B64F3A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC5170F81A3E0B3100B64F3A /* 2.jpg */; };
+		FC5170FE1A3E0B3100B64F3A /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC5170F91A3E0B3100B64F3A /* 3.jpg */; };
+		FC5170FF1A3E0B3100B64F3A /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC5170FA1A3E0B3100B64F3A /* 4.jpg */; };
+		FC5171001A3E0B3100B64F3A /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC5170FB1A3E0B3100B64F3A /* 5.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +109,11 @@
 		FC261C591A3DD58C008FAA66 /* RMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMViewController.h; sourceTree = "<group>"; };
 		FC261C5A1A3DD58C008FAA66 /* RMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMViewController.m; sourceTree = "<group>"; };
 		FC261C5E1A3DD7A7008FAA66 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Launch Screen.xib"; path = "../Launch Screen.xib"; sourceTree = "<group>"; };
+		FC5170F71A3E0B3100B64F3A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		FC5170F81A3E0B3100B64F3A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		FC5170F91A3E0B3100B64F3A /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		FC5170FA1A3E0B3100B64F3A /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		FC5170FB1A3E0B3100B64F3A /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +230,11 @@
 		FC261C331A3DCA14008FAA66 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				FC5170F71A3E0B3100B64F3A /* 1.jpg */,
+				FC5170F81A3E0B3100B64F3A /* 2.jpg */,
+				FC5170F91A3E0B3100B64F3A /* 3.jpg */,
+				FC5170FA1A3E0B3100B64F3A /* 4.jpg */,
+				FC5170FB1A3E0B3100B64F3A /* 5.jpg */,
 				FC261C521A3DD3A2008FAA66 /* biohaz2.png */,
 				FC261C501A3DD280008FAA66 /* biohaz.png */,
 				FC261C4E1A3DCDB7008FAA66 /* jixqRA4iE.png */,
@@ -338,19 +353,24 @@
 				FC261C461A3DCA20008FAA66 /* fire14.png in Resources */,
 				FC261C5F1A3DD7A7008FAA66 /* Launch Screen.xib in Resources */,
 				FC261C4A1A3DCA20008FAA66 /* iron.png in Resources */,
+				FC5171001A3E0B3100B64F3A /* 5.jpg in Resources */,
 				84FA87C0192DCAF800713E53 /* InfoPlist.strings in Resources */,
 				FC261C491A3DCA20008FAA66 /* hot.png in Resources */,
 				FC261C4F1A3DCDB7008FAA66 /* jixqRA4iE.png in Resources */,
 				FC261C411A3DCA20008FAA66 /* arctic.png in Resources */,
+				FC5170FC1A3E0B3100B64F3A /* 1.jpg in Resources */,
 				FC261C4B1A3DCA20008FAA66 /* rainbow.png in Resources */,
+				FC5170FF1A3E0B3100B64F3A /* 4.jpg in Resources */,
 				FC261C481A3DCA20008FAA66 /* heat.png in Resources */,
 				FC261C431A3DCA20008FAA66 /* contrast.png in Resources */,
+				FC5170FE1A3E0B3100B64F3A /* 3.jpg in Resources */,
 				FC261C4C1A3DCA20008FAA66 /* snowflake.png in Resources */,
 				84FA87C9192DCAF800713E53 /* Main.storyboard in Resources */,
 				84C44BFC192FB14100DAD01A /* FLIROneSDK.bundle in Resources */,
 				FC261C511A3DD280008FAA66 /* biohaz.png in Resources */,
 				FC261C421A3DCA20008FAA66 /* cold.png in Resources */,
 				FC261C471A3DCA20008FAA66 /* ghost.png in Resources */,
+				FC5170FD1A3E0B3100B64F3A /* 2.jpg in Resources */,
 				FC261C441A3DCA20008FAA66 /* contrast26.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

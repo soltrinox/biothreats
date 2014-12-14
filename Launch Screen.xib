@@ -14,15 +14,22 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="biohaz.png" translatesAutoresizingMaskIntoConstraints="NO" id="KJB-SH-Wak">
                     <rect key="frame" x="210" y="210" width="60" height="60"/>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="bioguard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sr8-Yf-ZUZ">
+                    <rect key="frame" x="147" y="139" width="187" height="63"/>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="46"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="centerX" secondItem="sr8-Yf-ZUZ" secondAttribute="centerX" id="XT2-2V-XD9"/>
                 <constraint firstAttribute="centerY" secondItem="KJB-SH-Wak" secondAttribute="centerY" constant="1" id="teG-bd-Q8P"/>
                 <constraint firstAttribute="centerX" secondItem="KJB-SH-Wak" secondAttribute="centerX" constant="1" id="uK1-1C-c9S"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="404" y="445"/>
+            <point key="canvasLocation" x="416" y="407"/>
         </view>
     </objects>
     <resources>

@@ -719,7 +719,7 @@
             // round the corners
             leftEyeView.layer.cornerRadius = faceWidth*0.15;
             // add the view to the window
-            [self.faceBox addSubview:leftEyeView];
+            [_masterImageView addSubview:leftEyeView];
         }
         
         if(faceFeature.hasRightEyePosition)
@@ -733,7 +733,7 @@
             // round the corners
             leftEye.layer.cornerRadius = faceWidth*0.15;
             // add the new view to the window
-            [self.faceBox addSubview:leftEye];
+            [_masterImageView addSubview:leftEye];
         }
         
         if(faceFeature.hasMouthPosition)
@@ -747,7 +747,7 @@
             // round the corners
             mouth.layer.cornerRadius = faceWidth*0.2;
             // add the new view to the window
-            [self.faceBox addSubview:mouth];
+            [_masterImageView addSubview:mouth];
         }
     }
 }
@@ -794,8 +794,9 @@
 //    
 //    // flip the entire window to make everything right side up
 //    [self.faceBox setTransform:CGAffineTransformMakeScale(1, -1)];
-    
-    
+    [self.faceBox bringSubviewToFront:image];
+    [_masterImageView addSubview:image];
+    [self.faceBox bringSubviewToFront:_masterImageView];
     
 }
 

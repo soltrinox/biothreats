@@ -25,6 +25,27 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSz-Et-C8f">
+                                        <rect key="frame" x="0.0" y="103" width="320" height="114"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wh3-W7-W1i">
+                                                <rect key="frame" x="27" y="0.0" width="30" height="30"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NpR-FS-Uhj">
+                                                <rect key="frame" x="81" y="0.0" width="30" height="30"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qV4-8m-kT6">
+                                                <rect key="frame" x="139" y="0.0" width="30" height="30"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CjP-IY-Zfc">
+                                                <rect key="frame" x="196" y="0.0" width="30" height="30"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Q1W-fo-UUQ">
+                                                <rect key="frame" x="254" y="0.0" width="30" height="30"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -190,6 +211,13 @@
                                             <action selector="thermalButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dbH-7E-n28"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="jixqRA4iE.png" translatesAutoresizingMaskIntoConstraints="NO" id="BYc-e0-cIM">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                    </imageView>
+                                    <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNi-hO-wzk">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <view contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ob7-wt-o47">
                                         <rect key="frame" x="0.0" y="84" width="320" height="60"/>
                                         <subviews>
@@ -257,16 +285,15 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="jixqRA4iE.png" translatesAutoresizingMaskIntoConstraints="NO" id="BYc-e0-cIM">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="BYc-e0-cIM" secondAttribute="centerY" constant="1" id="0le-P3-1vb"/>
                                     <constraint firstItem="iZI-Wf-F1j" firstAttribute="height" secondItem="350-VF-rUN" secondAttribute="height" id="EWB-EF-4sa"/>
+                                    <constraint firstItem="fNi-hO-wzk" firstAttribute="height" secondItem="350-VF-rUN" secondAttribute="height" id="GXB-mT-NLU"/>
                                     <constraint firstAttribute="width" secondItem="W4p-dn-qsv" secondAttribute="width" id="JB7-Jo-nrW"/>
                                     <constraint firstAttribute="centerX" secondItem="BYc-e0-cIM" secondAttribute="centerX" constant="1" id="LpP-Bu-ZXl"/>
+                                    <constraint firstItem="fNi-hO-wzk" firstAttribute="width" secondItem="350-VF-rUN" secondAttribute="width" id="YBJ-QN-VOQ"/>
                                     <constraint firstAttribute="bottom" secondItem="Ob7-wt-o47" secondAttribute="bottom" constant="-1" id="i2t-KF-Gb7"/>
                                     <constraint firstAttribute="height" secondItem="W4p-dn-qsv" secondAttribute="height" id="iEX-Yv-7xJ"/>
                                     <constraint firstItem="iZI-Wf-F1j" firstAttribute="width" secondItem="350-VF-rUN" secondAttribute="width" id="oSy-ff-wW1"/>
@@ -345,13 +372,13 @@
                         <outlet property="iron" destination="0ey-s2-iKf" id="qfW-AK-lMx"/>
                         <outlet property="radiometricImageView" destination="bBs-iK-aLn" id="QXQ-Gn-fSI"/>
                         <outlet property="rainbow" destination="I3j-5N-YXS" id="Ck9-sV-WhC"/>
-                        <outlet property="thermalButton" destination="W4p-dn-qsv" id="qIK-bG-PVd"/>
+                        <outlet property="thermalButton" destination="4QW-Fz-CXo" id="Qhy-OX-knj"/>
                         <outlet property="thermalImageView" destination="iZI-Wf-F1j" id="77P-QW-sTE"/>
                         <outlet property="tuningStateLabel" destination="Dur-Bs-7Qq" id="hvj-h1-vXa"/>
                         <outlet property="versionLabel" destination="MYy-8A-Z1Y" id="nyg-sK-gsG"/>
-                        <outlet property="visualJPEGButton" destination="Rpt-iN-u0T" id="7x9-TU-EaQ"/>
+                        <outlet property="visualJPEGButton" destination="4QW-Fz-CXo" id="13E-TR-V4b"/>
                         <outlet property="visualJPEGView" destination="S8A-ef-sTj" id="7dE-pi-2qa"/>
-                        <outlet property="visualYCbCrButton" destination="26k-S1-Xfj" id="RH6-Bq-whQ"/>
+                        <outlet property="visualYCbCrButton" destination="4QW-Fz-CXo" id="esN-Pq-Vrc"/>
                         <outlet property="visualYCbCrView" destination="wda-uy-9Pa" id="NZH-21-DkD"/>
                     </connections>
                 </viewController>
@@ -394,6 +421,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1.jpg" width="100" height="100"/>
+        <image name="2.jpg" width="100" height="75"/>
+        <image name="3.jpg" width="100" height="83"/>
+        <image name="4.jpg" width="100" height="100"/>
+        <image name="5.jpg" width="84" height="100"/>
         <image name="arctic.png" width="64" height="83"/>
         <image name="biohaz.png" width="100" height="100"/>
         <image name="biohaz2.png" width="100" height="100"/>
