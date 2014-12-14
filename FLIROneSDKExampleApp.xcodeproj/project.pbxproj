@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84077E5B1933464700FE98BF /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84077E5A1933464700FE98BF /* FLIROneSDK.framework */; };
+		847EF2571963359100F4344A /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 847EF2561963359100F4344A /* libstdc++.dylib */; };
+		84C44BFC192FB14100DAD01A /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84C44BFB192FB14100DAD01A /* FLIROneSDK.bundle */; };
+		84F15AF31A080F5E00D5DD08 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */; };
+		84FA87B6192DCAF800713E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA87B5192DCAF800713E53 /* Foundation.framework */; };
+		84FA87B8192DCAF800713E53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA87B7192DCAF800713E53 /* CoreGraphics.framework */; };
+		84FA87BA192DCAF800713E53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA87B9192DCAF800713E53 /* UIKit.framework */; };
+		84FA87C0192DCAF800713E53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84FA87BE192DCAF800713E53 /* InfoPlist.strings */; };
+		84FA87C2192DCAF800713E53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FA87C1192DCAF800713E53 /* main.m */; };
+		84FA87C6192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FA87C5192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m */; };
+		84FA87C9192DCAF800713E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FA87C7192DCAF800713E53 /* Main.storyboard */; };
+		84FA87CC192DCAF800713E53 /* FLIROneSDKExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FA87CB192DCAF800713E53 /* FLIROneSDKExampleViewController.m */; };
+		84FA87CE192DCAF800713E53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FA87CD192DCAF800713E53 /* Images.xcassets */; };
+		84FA87D5192DCAF800713E53 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA87D4192DCAF800713E53 /* XCTest.framework */; };
+		84FA87D6192DCAF800713E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA87B5192DCAF800713E53 /* Foundation.framework */; };
+		84FA87D7192DCAF800713E53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA87B9192DCAF800713E53 /* UIKit.framework */; };
+		84FA87DF192DCAF800713E53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84FA87DD192DCAF800713E53 /* InfoPlist.strings */; };
+		84FA87E1192DCAF800713E53 /* FLIROneSDKExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FA87E0192DCAF800713E53 /* FLIROneSDKExampleTests.m */; };
+		FC261C411A3DCA20008FAA66 /* arctic.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C341A3DCA20008FAA66 /* arctic.png */; };
+		FC261C421A3DCA20008FAA66 /* cold.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C351A3DCA20008FAA66 /* cold.png */; };
+		FC261C431A3DCA20008FAA66 /* contrast.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C361A3DCA20008FAA66 /* contrast.png */; };
+		FC261C441A3DCA20008FAA66 /* contrast26.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C371A3DCA20008FAA66 /* contrast26.png */; };
+		FC261C451A3DCA20008FAA66 /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C381A3DCA20008FAA66 /* crosshair.png */; };
+		FC261C461A3DCA20008FAA66 /* fire14.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C391A3DCA20008FAA66 /* fire14.png */; };
+		FC261C471A3DCA20008FAA66 /* ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C3A1A3DCA20008FAA66 /* ghost.png */; };
+		FC261C481A3DCA20008FAA66 /* heat.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C3B1A3DCA20008FAA66 /* heat.png */; };
+		FC261C491A3DCA20008FAA66 /* hot.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C3C1A3DCA20008FAA66 /* hot.png */; };
+		FC261C4A1A3DCA20008FAA66 /* iron.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C3D1A3DCA20008FAA66 /* iron.png */; };
+		FC261C4B1A3DCA20008FAA66 /* rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C3E1A3DCA20008FAA66 /* rainbow.png */; };
+		FC261C4C1A3DCA20008FAA66 /* snowflake.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C3F1A3DCA20008FAA66 /* snowflake.png */; };
+		FC261C4D1A3DCA20008FAA66 /* star42.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C401A3DCA20008FAA66 /* star42.png */; };
+		FC261C4F1A3DCDB7008FAA66 /* jixqRA4iE.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C4E1A3DCDB7008FAA66 /* jixqRA4iE.png */; };
+		FC261C511A3DD280008FAA66 /* biohaz.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C501A3DD280008FAA66 /* biohaz.png */; };
+		FC261C531A3DD3A2008FAA66 /* biohaz2.png in Resources */ = {isa = PBXBuildFile; fileRef = FC261C521A3DD3A2008FAA66 /* biohaz2.png */; };
+		FC261C5B1A3DD58C008FAA66 /* RMDisplayLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC261C561A3DD58C008FAA66 /* RMDisplayLabel.m */; };
+		FC261C5C1A3DD58C008FAA66 /* RMDownloadIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FC261C581A3DD58C008FAA66 /* RMDownloadIndicator.m */; };
+		FC261C5D1A3DD58C008FAA66 /* RMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC261C5A1A3DD58C008FAA66 /* RMViewController.m */; };
+		FC261C5F1A3DD7A7008FAA66 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC261C5E1A3DD7A7008FAA66 /* Launch Screen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84FA87D8192DCAF800713E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FA87AA192DCAF800713E53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FA87B1192DCAF800713E53;
+			remoteInfo = FLIROneSDKExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84077E5A1933464700FE98BF /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = ../FLIROneSDK.framework; sourceTree = "<group>"; };
+		847EF2561963359100F4344A /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		84C44BFB192FB14100DAD01A /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FLIROneSDK.bundle; path = ../../FLIROneSDK.bundle; sourceTree = "<group>"; };
+		84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		84FA87B2192DCAF800713E53 /* FLIROneSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLIROneSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FA87B5192DCAF800713E53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84FA87B7192DCAF800713E53 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84FA87B9192DCAF800713E53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84FA87BD192DCAF800713E53 /* FLIROneSDKExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FLIROneSDKExample-Info.plist"; sourceTree = "<group>"; };
+		84FA87BF192DCAF800713E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84FA87C1192DCAF800713E53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84FA87C3192DCAF800713E53 /* FLIROneSDKExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FLIROneSDKExample-Prefix.pch"; sourceTree = "<group>"; };
+		84FA87C4192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLIROneSDKExampleAppDelegate.h; sourceTree = "<group>"; };
+		84FA87C5192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLIROneSDKExampleAppDelegate.m; sourceTree = "<group>"; };
+		84FA87C8192DCAF800713E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84FA87CA192DCAF800713E53 /* FLIROneSDKExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLIROneSDKExampleViewController.h; sourceTree = "<group>"; };
+		84FA87CB192DCAF800713E53 /* FLIROneSDKExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLIROneSDKExampleViewController.m; sourceTree = "<group>"; };
+		84FA87CD192DCAF800713E53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84FA87D3192DCAF800713E53 /* FLIROneSDKExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLIROneSDKExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FA87D4192DCAF800713E53 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84FA87DC192DCAF800713E53 /* FLIROneSDKExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FLIROneSDKExampleTests-Info.plist"; sourceTree = "<group>"; };
+		84FA87DE192DCAF800713E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84FA87E0192DCAF800713E53 /* FLIROneSDKExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLIROneSDKExampleTests.m; sourceTree = "<group>"; };
+		FC261C341A3DCA20008FAA66 /* arctic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arctic.png; sourceTree = "<group>"; };
+		FC261C351A3DCA20008FAA66 /* cold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cold.png; sourceTree = "<group>"; };
+		FC261C361A3DCA20008FAA66 /* contrast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contrast.png; sourceTree = "<group>"; };
+		FC261C371A3DCA20008FAA66 /* contrast26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contrast26.png; sourceTree = "<group>"; };
+		FC261C381A3DCA20008FAA66 /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
+		FC261C391A3DCA20008FAA66 /* fire14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire14.png; sourceTree = "<group>"; };
+		FC261C3A1A3DCA20008FAA66 /* ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost.png; sourceTree = "<group>"; };
+		FC261C3B1A3DCA20008FAA66 /* heat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heat.png; sourceTree = "<group>"; };
+		FC261C3C1A3DCA20008FAA66 /* hot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hot.png; sourceTree = "<group>"; };
+		FC261C3D1A3DCA20008FAA66 /* iron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iron.png; sourceTree = "<group>"; };
+		FC261C3E1A3DCA20008FAA66 /* rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainbow.png; sourceTree = "<group>"; };
+		FC261C3F1A3DCA20008FAA66 /* snowflake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowflake.png; sourceTree = "<group>"; };
+		FC261C401A3DCA20008FAA66 /* star42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star42.png; sourceTree = "<group>"; };
+		FC261C4E1A3DCDB7008FAA66 /* jixqRA4iE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jixqRA4iE.png; sourceTree = "<group>"; };
+		FC261C501A3DD280008FAA66 /* biohaz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biohaz.png; sourceTree = "<group>"; };
+		FC261C521A3DD3A2008FAA66 /* biohaz2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biohaz2.png; sourceTree = "<group>"; };
+		FC261C551A3DD58C008FAA66 /* RMDisplayLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDisplayLabel.h; sourceTree = "<group>"; };
+		FC261C561A3DD58C008FAA66 /* RMDisplayLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDisplayLabel.m; sourceTree = "<group>"; };
+		FC261C571A3DD58C008FAA66 /* RMDownloadIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDownloadIndicator.h; sourceTree = "<group>"; };
+		FC261C581A3DD58C008FAA66 /* RMDownloadIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDownloadIndicator.m; sourceTree = "<group>"; };
+		FC261C591A3DD58C008FAA66 /* RMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMViewController.h; sourceTree = "<group>"; };
+		FC261C5A1A3DD58C008FAA66 /* RMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMViewController.m; sourceTree = "<group>"; };
+		FC261C5E1A3DD7A7008FAA66 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Launch Screen.xib"; path = "../Launch Screen.xib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84FA87AF192DCAF800713E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F15AF31A080F5E00D5DD08 /* AssetsLibrary.framework in Frameworks */,
+				84077E5B1933464700FE98BF /* FLIROneSDK.framework in Frameworks */,
+				847EF2571963359100F4344A /* libstdc++.dylib in Frameworks */,
+				84FA87B8192DCAF800713E53 /* CoreGraphics.framework in Frameworks */,
+				84FA87BA192DCAF800713E53 /* UIKit.framework in Frameworks */,
+				84FA87B6192DCAF800713E53 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA87D0192DCAF800713E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA87D5192DCAF800713E53 /* XCTest.framework in Frameworks */,
+				84FA87D7192DCAF800713E53 /* UIKit.framework in Frameworks */,
+				84FA87D6192DCAF800713E53 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84FA87A9192DCAF800713E53 = {
+			isa = PBXGroup;
+			children = (
+				84FA87BB192DCAF800713E53 /* FLIROneSDKExampleApp */,
+				84FA87DA192DCAF800713E53 /* FLIROneSDKExampleAppTests */,
+				84FA87B4192DCAF800713E53 /* Frameworks */,
+				84FA87B3192DCAF800713E53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84FA87B3192DCAF800713E53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84FA87B2192DCAF800713E53 /* FLIROneSDKExample.app */,
+				84FA87D3192DCAF800713E53 /* FLIROneSDKExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FA87B4192DCAF800713E53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */,
+				847EF2561963359100F4344A /* libstdc++.dylib */,
+				84077E5A1933464700FE98BF /* FLIROneSDK.framework */,
+				84FA87B5192DCAF800713E53 /* Foundation.framework */,
+				84FA87B7192DCAF800713E53 /* CoreGraphics.framework */,
+				84FA87B9192DCAF800713E53 /* UIKit.framework */,
+				84FA87D4192DCAF800713E53 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84FA87BB192DCAF800713E53 /* FLIROneSDKExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				FC261C5E1A3DD7A7008FAA66 /* Launch Screen.xib */,
+				FC261C541A3DD58C008FAA66 /* Components */,
+				FC261C591A3DD58C008FAA66 /* RMViewController.h */,
+				FC261C5A1A3DD58C008FAA66 /* RMViewController.m */,
+				FC261C331A3DCA14008FAA66 /* assets */,
+				84FA87C4192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.h */,
+				84FA87C5192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m */,
+				84FA87C7192DCAF800713E53 /* Main.storyboard */,
+				84FA87CA192DCAF800713E53 /* FLIROneSDKExampleViewController.h */,
+				84FA87CB192DCAF800713E53 /* FLIROneSDKExampleViewController.m */,
+				84FA87CD192DCAF800713E53 /* Images.xcassets */,
+				84FA87BC192DCAF800713E53 /* Supporting Files */,
+			);
+			name = FLIROneSDKExampleApp;
+			path = FLIROneSDKExample;
+			sourceTree = "<group>";
+		};
+		84FA87BC192DCAF800713E53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84C44BFB192FB14100DAD01A /* FLIROneSDK.bundle */,
+				84FA87BD192DCAF800713E53 /* FLIROneSDKExample-Info.plist */,
+				84FA87BE192DCAF800713E53 /* InfoPlist.strings */,
+				84FA87C1192DCAF800713E53 /* main.m */,
+				84FA87C3192DCAF800713E53 /* FLIROneSDKExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84FA87DA192DCAF800713E53 /* FLIROneSDKExampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				84FA87E0192DCAF800713E53 /* FLIROneSDKExampleTests.m */,
+				84FA87DB192DCAF800713E53 /* Supporting Files */,
+			);
+			name = FLIROneSDKExampleAppTests;
+			path = FLIROneSDKExampleTests;
+			sourceTree = "<group>";
+		};
+		84FA87DB192DCAF800713E53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84FA87DC192DCAF800713E53 /* FLIROneSDKExampleTests-Info.plist */,
+				84FA87DD192DCAF800713E53 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC261C331A3DCA14008FAA66 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				FC261C521A3DD3A2008FAA66 /* biohaz2.png */,
+				FC261C501A3DD280008FAA66 /* biohaz.png */,
+				FC261C4E1A3DCDB7008FAA66 /* jixqRA4iE.png */,
+				FC261C341A3DCA20008FAA66 /* arctic.png */,
+				FC261C351A3DCA20008FAA66 /* cold.png */,
+				FC261C361A3DCA20008FAA66 /* contrast.png */,
+				FC261C371A3DCA20008FAA66 /* contrast26.png */,
+				FC261C381A3DCA20008FAA66 /* crosshair.png */,
+				FC261C391A3DCA20008FAA66 /* fire14.png */,
+				FC261C3A1A3DCA20008FAA66 /* ghost.png */,
+				FC261C3B1A3DCA20008FAA66 /* heat.png */,
+				FC261C3C1A3DCA20008FAA66 /* hot.png */,
+				FC261C3D1A3DCA20008FAA66 /* iron.png */,
+				FC261C3E1A3DCA20008FAA66 /* rainbow.png */,
+				FC261C3F1A3DCA20008FAA66 /* snowflake.png */,
+				FC261C401A3DCA20008FAA66 /* star42.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		FC261C541A3DD58C008FAA66 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FC261C551A3DD58C008FAA66 /* RMDisplayLabel.h */,
+				FC261C561A3DD58C008FAA66 /* RMDisplayLabel.m */,
+				FC261C571A3DD58C008FAA66 /* RMDownloadIndicator.h */,
+				FC261C581A3DD58C008FAA66 /* RMDownloadIndicator.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84FA87B1192DCAF800713E53 /* FLIROneSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FA87E4192DCAF800713E53 /* Build configuration list for PBXNativeTarget "FLIROneSDKExample" */;
+			buildPhases = (
+				84FA87AE192DCAF800713E53 /* Sources */,
+				84FA87AF192DCAF800713E53 /* Frameworks */,
+				84FA87B0192DCAF800713E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLIROneSDKExample;
+			productName = FLIROneSDKExample;
+			productReference = 84FA87B2192DCAF800713E53 /* FLIROneSDKExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84FA87D2192DCAF800713E53 /* FLIROneSDKExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FA87E7192DCAF800713E53 /* Build configuration list for PBXNativeTarget "FLIROneSDKExampleTests" */;
+			buildPhases = (
+				84FA87CF192DCAF800713E53 /* Sources */,
+				84FA87D0192DCAF800713E53 /* Frameworks */,
+				84FA87D1192DCAF800713E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FA87D9192DCAF800713E53 /* PBXTargetDependency */,
+			);
+			name = FLIROneSDKExampleTests;
+			productName = FLIROneSDKExampleTests;
+			productReference = 84FA87D3192DCAF800713E53 /* FLIROneSDKExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84FA87AA192DCAF800713E53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FLIROneSDKExample;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = novacoast;
+				TargetAttributes = {
+					84FA87D2192DCAF800713E53 = {
+						TestTargetID = 84FA87B1192DCAF800713E53;
+					};
+				};
+			};
+			buildConfigurationList = 84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "FLIROneSDKExampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84FA87A9192DCAF800713E53;
+			productRefGroup = 84FA87B3192DCAF800713E53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84FA87B1192DCAF800713E53 /* FLIROneSDKExample */,
+				84FA87D2192DCAF800713E53 /* FLIROneSDKExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84FA87B0192DCAF800713E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA87CE192DCAF800713E53 /* Images.xcassets in Resources */,
+				FC261C531A3DD3A2008FAA66 /* biohaz2.png in Resources */,
+				FC261C4D1A3DCA20008FAA66 /* star42.png in Resources */,
+				FC261C451A3DCA20008FAA66 /* crosshair.png in Resources */,
+				FC261C461A3DCA20008FAA66 /* fire14.png in Resources */,
+				FC261C5F1A3DD7A7008FAA66 /* Launch Screen.xib in Resources */,
+				FC261C4A1A3DCA20008FAA66 /* iron.png in Resources */,
+				84FA87C0192DCAF800713E53 /* InfoPlist.strings in Resources */,
+				FC261C491A3DCA20008FAA66 /* hot.png in Resources */,
+				FC261C4F1A3DCDB7008FAA66 /* jixqRA4iE.png in Resources */,
+				FC261C411A3DCA20008FAA66 /* arctic.png in Resources */,
+				FC261C4B1A3DCA20008FAA66 /* rainbow.png in Resources */,
+				FC261C481A3DCA20008FAA66 /* heat.png in Resources */,
+				FC261C431A3DCA20008FAA66 /* contrast.png in Resources */,
+				FC261C4C1A3DCA20008FAA66 /* snowflake.png in Resources */,
+				84FA87C9192DCAF800713E53 /* Main.storyboard in Resources */,
+				84C44BFC192FB14100DAD01A /* FLIROneSDK.bundle in Resources */,
+				FC261C511A3DD280008FAA66 /* biohaz.png in Resources */,
+				FC261C421A3DCA20008FAA66 /* cold.png in Resources */,
+				FC261C471A3DCA20008FAA66 /* ghost.png in Resources */,
+				FC261C441A3DCA20008FAA66 /* contrast26.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA87D1192DCAF800713E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA87DF192DCAF800713E53 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84FA87AE192DCAF800713E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC261C5B1A3DD58C008FAA66 /* RMDisplayLabel.m in Sources */,
+				84FA87C6192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m in Sources */,
+				84FA87C2192DCAF800713E53 /* main.m in Sources */,
+				FC261C5C1A3DD58C008FAA66 /* RMDownloadIndicator.m in Sources */,
+				84FA87CC192DCAF800713E53 /* FLIROneSDKExampleViewController.m in Sources */,
+				FC261C5D1A3DD58C008FAA66 /* RMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FA87CF192DCAF800713E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FA87E1192DCAF800713E53 /* FLIROneSDKExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84FA87D9192DCAF800713E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FA87B1192DCAF800713E53 /* FLIROneSDKExample */;
+			targetProxy = 84FA87D8192DCAF800713E53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84FA87BE192DCAF800713E53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FA87BF192DCAF800713E53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84FA87C7192DCAF800713E53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FA87C8192DCAF800713E53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84FA87DD192DCAF800713E53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FA87DE192DCAF800713E53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84FA87E2192DCAF800713E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84FA87E3192DCAF800713E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84FA87E5192DCAF800713E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/..",
+					"/Users/admin/Desktop/VSR-iOS",
+					/Users/admin/Desktop/flironecompositeviewer/CompositeViewer,
+					"/Users/admin/git/rosebud-app-macro/rosebud-sdk/build/FLIROneSDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLIROneSDKExample/FLIROneSDKExample-Prefix.pch";
+				INFOPLIST_FILE = "FLIROneSDKExample/FLIROneSDKExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84FA87E6192DCAF800713E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/..",
+					"/Users/admin/Desktop/VSR-iOS",
+					/Users/admin/Desktop/flironecompositeviewer/CompositeViewer,
+					"/Users/admin/git/rosebud-app-macro/rosebud-sdk/build/FLIROneSDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLIROneSDKExample/FLIROneSDKExample-Prefix.pch";
+				INFOPLIST_FILE = "FLIROneSDKExample/FLIROneSDKExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84FA87E8192DCAF800713E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FLIROneSDKExample.app/FLIROneSDKExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLIROneSDKExample/FLIROneSDKExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FLIROneSDKExampleTests/FLIROneSDKExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84FA87E9192DCAF800713E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FLIROneSDKExample.app/FLIROneSDKExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLIROneSDKExample/FLIROneSDKExample-Prefix.pch";
+				INFOPLIST_FILE = "FLIROneSDKExampleTests/FLIROneSDKExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "FLIROneSDKExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA87E2192DCAF800713E53 /* Debug */,
+				84FA87E3192DCAF800713E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FA87E4192DCAF800713E53 /* Build configuration list for PBXNativeTarget "FLIROneSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA87E5192DCAF800713E53 /* Debug */,
+				84FA87E6192DCAF800713E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FA87E7192DCAF800713E53 /* Build configuration list for PBXNativeTarget "FLIROneSDKExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FA87E8192DCAF800713E53 /* Debug */,
+				84FA87E9192DCAF800713E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84FA87AA192DCAF800713E53 /* Project object */;
+}
