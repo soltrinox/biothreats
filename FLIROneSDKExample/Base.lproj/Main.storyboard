@@ -337,6 +337,7 @@
                         <outlet property="contrast" destination="N4e-Ie-p2E" id="3nI-PI-ji0"/>
                         <outlet property="faceBox" destination="ydt-q8-GkF" id="w6l-sz-qcV"/>
                         <outlet property="faceImageView" destination="iZI-Wf-F1j" id="Fnh-E5-yeZ"/>
+                        <outlet property="faces" destination="4QW-Fz-CXo" id="zs2-b5-EUP"/>
                         <outlet property="frameCountLabel" destination="IGh-WJ-lwK" id="ltH-bZ-Uq4"/>
                         <outlet property="ghost" destination="biB-jE-bdc" id="oYL-BC-mKO"/>
                         <outlet property="heat" destination="4QW-Fz-CXo" id="ebW-F2-Yie"/>

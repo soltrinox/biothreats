@@ -779,8 +779,8 @@
     
     UIImage *lastPic = [self imageWithImage:iix scaledToSize:CGSizeMake(320.f, 320.f)];
     UIImageView* image = [[UIImageView alloc] initWithImage:lastPic];
-    //    self.faceView.bounds = self.visualYCbCrView.bounds;
-    //    self.faceView.frame = self.visualYCbCrView.frame;
+        image.bounds = self.faceBox.bounds;
+        image.frame = self.faceBox.frame;
     
     
     // Draw the face detection image
@@ -794,6 +794,7 @@
 //    
 //    // flip the entire window to make everything right side up
 //    [self.faceBox setTransform:CGAffineTransformMakeScale(1, -1)];
+    
     
     
 }
