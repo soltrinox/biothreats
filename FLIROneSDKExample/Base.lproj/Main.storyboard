@@ -19,13 +19,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ydt-q8-GkF">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <rect key="frame" x="0.0" y="100" width="320" height="320"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wda-uy-9Pa">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.72941176470000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EaR-az-tI4">
                                 <rect key="frame" x="-10" y="372" width="340" height="215"/>
@@ -302,6 +303,10 @@
                                         <state key="normal" image="heat.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="findFaces:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DUc-sG-Yj9"/>
+                                            <action selector="visualYCbCrButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AJl-QV-IRa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -311,7 +316,6 @@
                         <constraints>
                             <constraint firstAttribute="height" secondItem="350-VF-rUN" secondAttribute="height" id="6qa-d7-x6V"/>
                             <constraint firstAttribute="width" secondItem="350-VF-rUN" secondAttribute="width" id="IgV-aL-YuT"/>
-                            <constraint firstAttribute="height" secondItem="ydt-q8-GkF" secondAttribute="height" id="QvL-52-9rm"/>
                             <constraint firstAttribute="width" secondItem="ydt-q8-GkF" secondAttribute="width" id="fa0-3S-4Yu"/>
                             <constraint firstItem="Q9V-ir-MDA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-1" id="kFF-aF-Npd"/>
                             <constraint firstItem="ZLh-a1-5Sg" firstAttribute="leading" secondItem="gFx-mQ-L1B" secondAttribute="leading" constant="20" id="opT-Ta-Bhu"/>
@@ -338,11 +342,16 @@
                         <outlet property="heat" destination="4QW-Fz-CXo" id="ebW-F2-Yie"/>
                         <outlet property="hot" destination="WA5-XG-SgB" id="aE4-mh-d5w"/>
                         <outlet property="iron" destination="0ey-s2-iKf" id="qfW-AK-lMx"/>
+                        <outlet property="radiometricImageView" destination="bBs-iK-aLn" id="QXQ-Gn-fSI"/>
                         <outlet property="rainbow" destination="I3j-5N-YXS" id="Ck9-sV-WhC"/>
                         <outlet property="thermalButton" destination="W4p-dn-qsv" id="qIK-bG-PVd"/>
                         <outlet property="thermalImageView" destination="iZI-Wf-F1j" id="77P-QW-sTE"/>
                         <outlet property="tuningStateLabel" destination="Dur-Bs-7Qq" id="hvj-h1-vXa"/>
                         <outlet property="versionLabel" destination="MYy-8A-Z1Y" id="nyg-sK-gsG"/>
+                        <outlet property="visualJPEGButton" destination="Rpt-iN-u0T" id="7x9-TU-EaQ"/>
+                        <outlet property="visualJPEGView" destination="S8A-ef-sTj" id="7dE-pi-2qa"/>
+                        <outlet property="visualYCbCrButton" destination="26k-S1-Xfj" id="RH6-Bq-whQ"/>
+                        <outlet property="visualYCbCrView" destination="wda-uy-9Pa" id="NZH-21-DkD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

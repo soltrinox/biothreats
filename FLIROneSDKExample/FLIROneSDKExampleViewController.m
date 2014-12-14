@@ -134,6 +134,8 @@
 //if the user is capturing a video or in the process of recording, the camera is "busy", block requests to capture more media
 @property (nonatomic) BOOL cameraBusy;
 
+@property (nonatomic) BOOL  faceBoxSet;
+
 //if there is currently a video being recorded
 @property (nonatomic) BOOL currentlyRecording;
 //is the image finished recording, and currently wrapping up the file write process?
@@ -148,6 +150,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _faceBoxSet = NO;
     
     _paletteArray = [[NSMutableArray alloc] init];
     [_paletteArray addObject:_contrast];
@@ -749,8 +753,8 @@
 }
 
 - (IBAction)findFaces:(id)sender{
+    [self toggleFaceBox];
     
-    [self faceDetector];
     
 }
 
@@ -773,7 +777,7 @@
     // Load the picture for face detection
     UIImage *iix = self.visualYCbCrImage;
     
-    UIImage *lastPic = [self imageWithImage:iix scaledToSize:CGSizeMake(140.f, 186.f)];
+    UIImage *lastPic = [self imageWithImage:iix scaledToSize:CGSizeMake(320.f, 320.f)];
     UIImageView* image = [[UIImageView alloc] initWithImage:lastPic];
     //    self.faceView.bounds = self.visualYCbCrView.bounds;
     //    self.faceView.frame = self.visualYCbCrView.frame;
@@ -786,12 +790,24 @@
     [self performSelectorInBackground:@selector(markFaces:) withObject:image];
     
     // flip image on y-axis to match coordinate system used by core image
-    [image setTransform:CGAffineTransformMakeScale(1, -1)];
+//    [image setTransform:CGAffineTransformMakeScale(1, -1)];
+//    
+//    // flip the entire window to make everything right side up
+//    [self.faceBox setTransform:CGAffineTransformMakeScale(1, -1)];
     
-    // flip the entire window to make everything right side up
-    [self.faceBox setTransform:CGAffineTransformMakeScale(1, -1)];
     
-    
+}
+
+-(void) toggleFaceBox{
+    if(_faceBoxSet){
+        
+        [self.view sendSubviewToBack:self.faceBox];
+        _faceBoxSet = NO;
+    }else{
+        [self.view bringSubviewToFront:self.faceBox];
+        [self faceDetector];
+        _faceBoxSet = YES;
+    }
 }
 
 // ==========================================================================================================================================
