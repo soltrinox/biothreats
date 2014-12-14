@@ -18,6 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ydt-q8-GkF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wda-uy-9Pa">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.72941176470000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EaR-az-tI4">
                                 <rect key="frame" x="-10" y="372" width="340" height="215"/>
                                 <subviews>
@@ -87,16 +96,16 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHF-71-HpZ">
-                                        <rect key="frame" x="170" y="20" width="150" height="26"/>
-                                        <state key="normal" title="MSX Distance: Off">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYo-9z-Y5d">
                                         <rect key="frame" x="237" y="115" width="48" height="30"/>
                                         <color key="backgroundColor" red="0.85668447069999998" green="0.85668447069999998" blue="0.85668447069999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="FACES">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHF-71-HpZ">
+                                        <rect key="frame" x="170" y="20" width="150" height="26"/>
+                                        <state key="normal" title="MSX Distance: Off">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -126,9 +135,6 @@
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pdX-kE-MTl">
                                         <rect key="frame" x="139" y="186" width="140" height="186"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wda-uy-9Pa">
-                                        <rect key="frame" x="-75" y="25" width="67" height="30"/>
                                     </imageView>
                                     <view clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nih-KQ-bLM">
                                         <rect key="frame" x="22" y="24" width="91" height="65"/>
@@ -276,6 +282,26 @@
                                         <state key="disabled" image="biohaz2.png"/>
                                         <state key="selected" image="biohaz.png"/>
                                         <state key="highlighted" image="biohaz.png"/>
+                                        <connections>
+                                            <action selector="capturePhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JtW-Za-uvX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXS-f4-RcG">
+                                        <rect key="frame" x="256" y="18" width="30" height="30"/>
+                                        <color key="tintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="crosshair.png"/>
+                                        <state key="disabled" image="crosshair.png"/>
+                                        <state key="selected" image="crosshair.png"/>
+                                        <state key="highlighted" image="crosshair.png"/>
+                                        <connections>
+                                            <action selector="viewLibrary:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QkD-3L-TVv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QW-Fz-CXo">
+                                        <rect key="frame" x="36" y="15" width="30" height="30"/>
+                                        <state key="normal" image="heat.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -285,6 +311,8 @@
                         <constraints>
                             <constraint firstAttribute="height" secondItem="350-VF-rUN" secondAttribute="height" id="6qa-d7-x6V"/>
                             <constraint firstAttribute="width" secondItem="350-VF-rUN" secondAttribute="width" id="IgV-aL-YuT"/>
+                            <constraint firstAttribute="height" secondItem="ydt-q8-GkF" secondAttribute="height" id="QvL-52-9rm"/>
+                            <constraint firstAttribute="width" secondItem="ydt-q8-GkF" secondAttribute="width" id="fa0-3S-4Yu"/>
                             <constraint firstItem="Q9V-ir-MDA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-1" id="kFF-aF-Npd"/>
                             <constraint firstItem="ZLh-a1-5Sg" firstAttribute="leading" secondItem="gFx-mQ-L1B" secondAttribute="leading" constant="20" id="opT-Ta-Bhu"/>
                             <constraint firstAttribute="trailing" secondItem="ZLh-a1-5Sg" secondAttribute="trailing" constant="20" id="w3U-nF-8D5"/>
@@ -296,15 +324,25 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="arctic" destination="yvw-jm-VIK" id="fmp-OG-Vf7"/>
+                        <outlet property="batteryChargingLabel" destination="Y6B-0v-I8s" id="4DM-Sh-AE7"/>
+                        <outlet property="batteryPercentageLabel" destination="pdT-HQ-82i" id="JC3-Jz-F2z"/>
+                        <outlet property="capturePhotoButton" destination="9fg-rV-efU" id="RCR-M9-dso"/>
+                        <outlet property="captureVideoButton" destination="6vc-q3-8md" id="WJo-Ij-hmF"/>
                         <outlet property="cold" destination="mmI-ds-5Kt" id="cfO-Bd-cHU"/>
+                        <outlet property="connectionLabel" destination="DN8-Gi-Yuz" id="lsT-XY-8bv"/>
                         <outlet property="contrast" destination="N4e-Ie-p2E" id="3nI-PI-ji0"/>
+                        <outlet property="faceBox" destination="ydt-q8-GkF" id="w6l-sz-qcV"/>
                         <outlet property="faceImageView" destination="iZI-Wf-F1j" id="Fnh-E5-yeZ"/>
+                        <outlet property="frameCountLabel" destination="IGh-WJ-lwK" id="ltH-bZ-Uq4"/>
                         <outlet property="ghost" destination="biB-jE-bdc" id="oYL-BC-mKO"/>
+                        <outlet property="heat" destination="4QW-Fz-CXo" id="ebW-F2-Yie"/>
                         <outlet property="hot" destination="WA5-XG-SgB" id="aE4-mh-d5w"/>
                         <outlet property="iron" destination="0ey-s2-iKf" id="qfW-AK-lMx"/>
                         <outlet property="rainbow" destination="I3j-5N-YXS" id="Ck9-sV-WhC"/>
                         <outlet property="thermalButton" destination="W4p-dn-qsv" id="qIK-bG-PVd"/>
                         <outlet property="thermalImageView" destination="iZI-Wf-F1j" id="77P-QW-sTE"/>
+                        <outlet property="tuningStateLabel" destination="Dur-Bs-7Qq" id="hvj-h1-vXa"/>
+                        <outlet property="versionLabel" destination="MYy-8A-Z1Y" id="nyg-sK-gsG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -351,7 +389,9 @@
         <image name="biohaz2.png" width="100" height="100"/>
         <image name="cold.png" width="64" height="64"/>
         <image name="contrast.png" width="64" height="64"/>
+        <image name="crosshair.png" width="64" height="64"/>
         <image name="ghost.png" width="64" height="64"/>
+        <image name="heat.png" width="64" height="64"/>
         <image name="hot.png" width="64" height="64"/>
         <image name="iron.png" width="64" height="44"/>
         <image name="jixqRA4iE.png" width="400" height="399"/>

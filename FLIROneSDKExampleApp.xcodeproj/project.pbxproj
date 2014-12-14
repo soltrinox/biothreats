@@ -299,6 +299,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = novacoast;
 				TargetAttributes = {
+					84FA87B1192DCAF800713E53 = {
+						DevelopmentTeam = 5Y63U6G7W6;
+					};
 					84FA87D2192DCAF800713E53 = {
 						TestTargetID = 84FA87B1192DCAF800713E53;
 					};
