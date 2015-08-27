@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/dylan/Documents/GIT/biothreats/biothreat.xcodeproj">
+      location = "group:FLIROneSDKExampleApp.xcodeproj">
    </FileRef>
 </Workspace>

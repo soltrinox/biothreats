@@ -315,14 +315,14 @@
 				ORGANIZATIONNAME = novacoast;
 				TargetAttributes = {
 					84FA87B1192DCAF800713E53 = {
-						DevelopmentTeam = 2KNWRB42T2;
+						DevelopmentTeam = 5Y63U6G7W6;
 					};
 					84FA87D2192DCAF800713E53 = {
 						TestTargetID = 84FA87B1192DCAF800713E53;
 					};
 				};
 			};
-			buildConfigurationList = 84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "biothreat" */;
+			buildConfigurationList = 84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "FLIROneSDKExampleApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -614,7 +614,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "biothreat" */ = {
+		84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "FLIROneSDKExampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84FA87E2192DCAF800713E53 /* Debug */,
